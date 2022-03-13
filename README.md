@@ -13,7 +13,7 @@
 알고리즘 공부를 습관화 하는것에 목표를 두고있습니다.
 
 ## 참여자 :bowtie:
-이명환 ( https://github.com/Gobans )
+[이명환](https://github.com/Gobans )
 
 ## 알고리즘 스터디 :pencil:
 
