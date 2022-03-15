@@ -13,12 +13,12 @@
 알고리즘 공부를 습관화 하는것에 목표를 두고있습니다.
 
 ## 참여자 :bowtie:
-[이명환](https://github.com/Gobans )
-[윤민수](https://github.com/herbi1411   )
-[이승연](https://github.com/129212 )
-[곽준재](https://github.com/wnswo8628 )
-[주수연](https://github.com/eclir  )
-[신동재](https://github.com/shindongjae1996 )
+[이명환](https://github.com/Gobans ) <br/>
+[윤민수](https://github.com/herbi1411   ) <br/>
+[이승연](https://github.com/129212 ) <br/>
+[곽준재](https://github.com/wnswo8628 ) <br/>
+[주수연](https://github.com/eclir  ) <br/>
+[신동재](https://github.com/shindongjae1996 ) <br/>
 
 ## 알고리즘 스터디 :pencil:
 
