@@ -14,6 +14,11 @@
 
 ## 참여자 :bowtie:
 [이명환](https://github.com/Gobans )
+[윤민수](https://github.com/herbi1411   )
+[이승연](https://github.com/129212 )
+[곽준재](https://github.com/wnswo8628 )
+[주수연](https://github.com/eclir  )
+[신동재](https://github.com/shindongjae1996 )
 
 ## 알고리즘 스터디 :pencil:
 
