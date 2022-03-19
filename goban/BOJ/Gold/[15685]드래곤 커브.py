@@ -8,7 +8,7 @@ n = int(sys.stdin.readline())
 command = [list(map(int,sys.stdin.readline().split())) for _ in range(n)]
 board = [[False] * 101 for row in range(101)]
 
-#make & allign curve
+#make & allign dragon curve
 draPattern = [[] for _ in range(n)]
 for i in range(n):
     x,y,d,g = command[i]
