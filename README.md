@@ -19,6 +19,9 @@
 [곽준재](https://github.com/wnswo8628 ) <br/>
 [주수연](https://github.com/eclir  ) <br/>
 [신동재](https://github.com/shindongjae1996 ) <br/>
+[김민영](https://github.com/minyokim) <br/>
+[서종인](https://github.com/chrrvlssm) <br/>
+
 
 ## 알고리즘 스터디 :pencil:
 
