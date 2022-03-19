@@ -11,7 +11,6 @@ def sort_word() :
  
     # 1. 길이가 짧은 것부터 정렬
     # 2. 길이가 같으면 사전 순으로
-    N = len(word)
     word.sort(key= lambda x: (len(x), x))
 
     # 출력
