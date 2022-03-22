@@ -12,6 +12,7 @@ for _ in range(m):
     tree_info[r - 1][c - 1].append(age)
 food = [[5 for _ in range(n)] for col in range(n)]
 
+# k년 반복
 for _ in range(k):
     #봄 여름
     for r in range(n):
