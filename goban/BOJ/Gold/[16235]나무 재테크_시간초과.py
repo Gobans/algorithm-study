@@ -23,6 +23,8 @@ adjy = [-1,0,1,-1,1,-1,0,1]
 
 import sys
 from collections import deque
+
+#입력 받기
 n,m,k = map(int, sys.stdin.readline().split())
 A = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
 tree_info = [list(map(int,sys.stdin.readline().split())) for _ in range(m)]
@@ -62,4 +64,4 @@ for i in range(k):
         for col in range(n):
             food[row][col] += A[row][col]
 print(len(tree_info))
-#시간초과.. 다른 방법을 강구해야한다.
+#시간초과.. 다른 방법을 강구해야한다. 겨울,
