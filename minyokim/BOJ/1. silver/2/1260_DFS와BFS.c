@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 int DFSvisit[1001];
-int pair[1001][1001];
-
 int BFSvisit[1001];
+int pair[1001][1001];
 int queue[1001];
 
 void DFS(int n, int k)
@@ -22,22 +21,21 @@ void DFS(int n, int k)
 void BFS(int n, int k)
 {
     int front = 0, rear = 1, Pop, i;
-
-    printf("%d", k);
     queue[0] = k;
-    BFSvisit[k] = 1;
 
     while (front < rear)
     {
-        Pop = queue[front]; //front에 있는 정점을 저장하고
-        front++;            //front 인덱스를 뒤로 보낸다. =dequeue
+        Pop = queue[front];
+        front++;
 
         for (int i = 1; i <= n; i++)
-        { //front에 있는 정점과 인접하지만 방문하지 않은 정점이 있으면
+        {
             if (pair[Pop][i] == 1 && BFSvisit[i] == 0)
             {
-                queue[rear] = i; //rear에
-                printf("%d", i); //그 정점 출력
+                queue[rear] = i;
+                printf("%d ", i);
+                rear++;
+                BFSvisit[i] = 1;
             }
         }
     }
@@ -56,9 +54,12 @@ int main(void)
         pair[x][y] = 1;
         pair[y][x] = 1;
     }
-    //DFS
+
     DFSvisit[V] = 1;
     printf("%d ", V);
     DFS(N, V);
+
+    BFSvisit[V] = 1;
+    printf("\n%d ", V);
     BFS(N, V);
 }
