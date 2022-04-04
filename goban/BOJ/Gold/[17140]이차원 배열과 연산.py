@@ -74,6 +74,10 @@ while(time < 100):
                     A.append([0])
                 max_len = len(sorted_list)*2
             term = 0
+            if time ==4:
+                print (A)
+                print (sorted_list)
+                print("=============================")
             for num1,num2 in sorted_list:
                 while(len(A[term]) <= j):
                     A[term].append(0)
@@ -82,14 +86,10 @@ while(time < 100):
                 A[term][j] = num1
                 A[term +1][j]= num2
                 term +=2
-    
         # 0 채워주기
         for g in range(col_len, len(A)):
             while(len(A[g]) < row_len):
                 A[g].append(0)
-
-    print(A)
-
     time +=1
     if (time == 100):
         if len(A[0]) >= c - 1 and len(A) >= r - 1:
