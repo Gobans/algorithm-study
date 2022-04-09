@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int check[9], arr[8], input[8], N, M;
+int arr[9], input[9], N, M;
 
 int compare(const void *a, const void *b)
 {
@@ -11,11 +11,11 @@ int compare(const void *a, const void *b)
     return (n1 - n2);
 }
 
-void func(int index)
+void func(int index, int k)
 {
-    if (index == M)
+    if (index == M + 1)
     {
-        for (int i = 0; i < M; i++)
+        for (int i = 1; i <= M; i++)
             printf("%d ", arr[i]);
         printf("\n");
         return;
@@ -23,24 +23,17 @@ void func(int index)
 
     for (int i = 1; i <= N; i++)
     {
-        if (check[i] == 1)
-            continue;
-        arr[index] = input[i - 1];
-        check[i] = 1;
-        func(index + 1);
-        check[i] = 0;
+        arr[index] = input[i];
+        func(index + 1, i);
     }
 }
 
 int main(void)
 {
     scanf("%d %d", &N, &M);
-    for (int i = 0; i < N; i++)
-    {
+    for (int i = 1; i <= N; i++)
         scanf("%d", &input[i]);
-    }
 
-    qsort(input, N, sizeof(int), compare);
-
-    func(0);
+    qsort(input, N + 1, sizeof(int), compare);
+    func(1, 1);
 }
